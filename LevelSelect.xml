@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="296dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Level8" />
 
     <Button
         android:id="@+id/Level5"
@@ -35,10 +35,10 @@
         android:layout_height="wrap_content"
         android:text="@string/level_5"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/Level6"
-        app:layout_constraintHorizontal_bias="0.50"
-        app:layout_constraintStart_toEndOf="@+id/Level4"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Level2" />
 
     <Button
         android:id="@+id/Level8"
@@ -49,34 +49,41 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="248dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Level5" />
 
     <Button
         android:id="@+id/Level1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
         android:text="@string/level_1"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="152dp" />
+        app:layout_constraintEnd_toStartOf="@+id/Level2"
+        app:layout_constraintTop_toBottomOf="@+id/ScreenHeader" />
 
     <Button
         android:id="@+id/Level4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
         android:text="@string/level_4"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintEnd_toStartOf="@+id/Level5"
+        app:layout_constraintTop_toBottomOf="@+id/Level1" />
 
     <Button
         android:id="@+id/Level7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
         android:text="@string/level_7"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="248dp" />
+        app:layout_constraintEnd_toStartOf="@+id/Level8"
+        app:layout_constraintTop_toBottomOf="@+id/Level4" />
 
     <Button
         android:id="@+id/Level6"
@@ -84,17 +91,18 @@
         android:layout_height="wrap_content"
         android:text="@string/level_6"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="249dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintStart_toEndOf="@+id/Level5"
+        app:layout_constraintTop_toBottomOf="@+id/Level3" />
 
     <Button
         android:id="@+id/Level3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
         android:text="@string/level_3"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="249dp"
-        tools:layout_editor_absoluteY="152dp" />
+        app:layout_constraintStart_toEndOf="@+id/Level2"
+        app:layout_constraintTop_toBottomOf="@+id/ScreenHeader" />
 
     <Button
         android:id="@+id/Level2"
@@ -114,6 +122,7 @@
         android:layout_height="wrap_content"
         android:text="@string/level_9"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="249dp"
-        tools:layout_editor_absoluteY="248dp" />
+        app:layout_constraintStart_toEndOf="@+id/Level8"
+        app:layout_constraintTop_toBottomOf="@+id/Level6" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
