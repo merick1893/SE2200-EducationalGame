@@ -61,7 +61,8 @@
         android:text="Level:"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_editor_absoluteY="40dp"
+        tools:ignore="MissingConstraints"/>
     
      <Button
         android:id="@+id/button6"
